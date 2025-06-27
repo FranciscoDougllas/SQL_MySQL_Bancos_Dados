@@ -14,3 +14,5 @@ SELECT * FROM pessoas;
 DELETE FROM pessoas WHERE nome = "Pedro";
 
 SELECT * FROM pessoas;
+
+DELETE FROM pessoas WHERE limite < 4000;
