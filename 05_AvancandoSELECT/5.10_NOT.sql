@@ -15,4 +15,9 @@ SELECT * FROM employees WHERE NOT gender = "M" AND NOT gender = "F";
 -- (excluindo três tipos de gênero)
 SELECT * FROM employees WHERE NOT gender = "M" AND NOT gender = "F" AND NOT gender = "N";
 
-SELECT * FROM employees WHERE NOT gender = "M" AND NOT gender = "F" AND NOT gender = "N" AND NOT gender = "O";
+-- Buscando funcionários que NÃO são M, F, N ou O
+-- (excluindo quatro tipos de gênero - provavelmente retornará 0 resultados)
+SELECT * FROM employees 
+    WHERE NOT gender = "M" 
+    AND NOT gender = "F" 
+    AND NOT gender = "N" AND NOT gender = "O";
